@@ -21,8 +21,8 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 700px; /* only for demonstration, should be removed */
-  background: #ccc;
+  /* height: 100%; only for demonstration, should be removed */
+ 
   padding: 20px;
 }
 a {
@@ -37,23 +37,23 @@ nav ul {
 }
 
 article {
-    
+  background-color: aliceblue;
   float: left;
   padding: 20px;
   width: 70%;
-  background-color: #f1f1f1;
-  height: 100%; /* only for demonstration, should be removed */
 }
 
-/* Clear floats after the columns 
-section:after {
-  width: auto;  
+
+section{
+  width: 100%;  
   content: "";
   display: table;
   clear: both;
-  margin-bottom: 80px;
+
+  background-color: rgb(157, 155, 163);
+
 }
-*/
+
 
 /* Style the footer */
 footer {
