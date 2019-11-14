@@ -16,12 +16,17 @@ header {
   font-size: 35px;
   color: white;
 }
-
+form {
+  background-color: slategray;
+  width: 60%;
+  float: left;
+  padding: 20px;
+}
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 30%;
-  /* height: 100%; only for demonstration, should be removed */
+  height: 100%; 
  
   padding: 20px;
 }
