@@ -1,3 +1,8 @@
+<?php
+	function __autoload($class_name){
+		require_once 'classes/' . $class_name . '.php';
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +13,18 @@
 </head>
 <body>
 
-<header>
-  <h2>Douglas </h2>
+
+<?php
+	
+    $usuario = new Usuarios();
+    foreach($usuario->findAll() as $key => $value)
+
+   ?>
+
+   <header>
+  <h2><?php echo $value->nome ?> </h2>
   <h3>Aki vai ficar o carrossel </h3>
 </header>
-
 <section >
   <nav>
     <img src="burro.jpg" alt="perfil sem fundo">
@@ -26,8 +38,8 @@
   
   <article>
     <h1>About Me</h1>
-    <p>Apaixonado por novos desafios e metodologias ágeis, busco oportunidades de crescimento profissional na área de desenvolvimento.</p>
-    <p>Acima foi uma cópia do texto do linkdin ( :</p>
+    <p><?php echo $value->sobre ?> </p>
+    
     <hr>
     <H1>Experiencias</H1>
     <p> <strong>Força Aérea Brasileira</strong>  </strong> <br>
