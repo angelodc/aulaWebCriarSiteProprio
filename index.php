@@ -8,7 +8,7 @@
 <html >
 <head>
 <title>Eu sou o Dougras!</title>
-<meta charset=utf-8"/>
+<meta charset=utf-8>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stYlesheet" type="text/css" href="style.css">
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
